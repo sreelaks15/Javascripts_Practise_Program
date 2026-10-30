@@ -61,3 +61,29 @@ class student {
 }
 const studentobj = new student("Name : Aashvi", "Age : 8", "Mark : 100")
 studentobj.display()
+
+console.log("*****************************************************");
+
+
+//29-10-2026
+//1. Can you write a JavaScript code to find the total price of all items
+//in this shopping cart array using the reduce() method?
+// How do you filter out products that cost more than 500 rupees from an array of objects
+
+
+let price = [200, 500, 2000, 3500, 1000, 20000]
+const totalPrice = price.reduce((total,value)=> total + value)
+console.log(totalPrice)
+
+const filter = price.filter((value,index) => value > 500)
+console.log("Cost of products more that Rs. 500 is " + filter)
+
+console.log("*****************************************************");
+
+// 2. Create a base class Character with an attack() method.
+//  Then create subclasses like Warrior, Mage, and Archer that override the attack() method
+//  to perform different types of attacks (e.g., sword, magic, arrow)."
+
+
+
+
